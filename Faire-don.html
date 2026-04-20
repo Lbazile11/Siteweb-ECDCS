@@ -1,169 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta charset="UTF-8">
+    <title>Faire un don | ECDCS</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<title>Faire un don | ECDCS</title>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="images/logo.png" alt="Logo ECDCS" class="logo" />
 
-<link rel="stylesheet" href="style.css">
+        <div class="site-identity">
+          <h1>Église du Corps du Christ Sanctifié (ECDCS)</h1>
+          <p>Organisation religieuse chrétienne à but non lucratif</p>
+        </div>
+      </div>
 
-</head>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
 
-<body>
+          <li><a href="mission.html">Mission</a></li>
 
+          <li><a href="vision.html">Vision</a></li>
 
-<header>
+          <li><a href="foi.html">Confession de Foi</a></li>
 
-<div class="logo-container">
+          <li><a href="gouvernance.html">Gouvernance</a></li>
 
-<img src="images/logo.png" alt="Logo ECDCS" class="logo">
+          <li><a href="actualites.html">Actualités</a></li>
 
-<div class="site-identity">
-<h1>Église du Corps du Christ Sanctifié (ECDCS)</h1>
-<p>Organisation religieuse chrétienne à but non lucratif</p>
-</div>
+          <li><a href="contact.html">Contact</a></li>
 
-</div>
+          <li><a href="dons.html" class="btn-don active">Faire un don</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <section class="page-header">
+        <h2>Faire un don</h2>
 
-<nav>
+        <p>
+          Votre générosité soutient la mission spirituelle, les activités de
+          l'église et les initiatives communautaires.
+        </p>
+      </section>
 
-<ul>
+      <section class="content-section">
+        <div class="container">
+          <div class="don-form-container">
+            <div class="don-form">
+              <h3>Formulaire de don</h3>
 
-<li><a href="index.html">Accueil</a></li>
+              <form>
+                <label for="nom">Nom complet</label>
+                <input type="text" id="nom" name="nom" required />
 
-<li><a href="mission.html">Mission</a></li>
+                <label for="email">Adresse courriel</label>
+                <input type="email" id="email" name="email" required />
 
-<li><a href="vision.html">Vision</a></li>
+                <label for="montant">Montant du don ($)</label>
+                <input
+                  type="number"
+                  id="montant"
+                  name="montant"
+                  min="1"
+                  required
+                />
 
-<li><a href="foi.html">Confession de Foi</a></li>
+                <label for="type-don">Type de don</label>
 
-<li><a href="gouvernance.html">Gouvernance</a></li>
+                <select id="type-don" name="type-don">
+                  <option value="dime">Dîme</option>
 
-<li><a href="actualites.html">Actualités</a></li>
+                  <option value="offrande">Offrande</option>
 
-<li><a href="contact.html">Contact</a></li>
+                  <option value="mission">Soutien à la mission</option>
 
-<li><a href="dons.html" class="btn-don active">Faire un don</a></li>
+                  <option value="special">Don spécial</option>
+                </select>
 
-</ul>
+                <label for="paiement">Méthode de paiement</label>
 
-</nav>
+                <select id="paiement" name="paiement">
+                  <option value="interac">Virement Interac</option>
 
-</header>
+                  <option value="carte">Carte de crédit</option>
 
+                  <option value="paypal">PayPal</option>
+                </select>
 
+                <label for="message">Message (optionnel)</label>
 
-<main>
+                <textarea id="message" name="message" rows="5"></textarea>
 
-
-<section class="page-header">
-
-<h2>Faire un don</h2>
-
-<p>
-Votre générosité soutient la mission spirituelle,
-les activités de l'église et les initiatives communautaires.
-</p>
-
-</section>
-
-
-
-<section class="content-section">
-
-<div class="container">
-
-<div class="don-form-container">
-
-<div class="don-form">
-
-<h3>Formulaire de don</h3>
-
-
-<form>
-
-
-<label for="nom">Nom complet</label>
-<input type="text" id="nom" name="nom" required>
-
-
-<label for="email">Adresse courriel</label>
-<input type="email" id="email" name="email" required>
-
-
-<label for="montant">Montant du don ($)</label>
-<input type="number" id="montant" name="montant" min="1" required>
-
-
-<label for="type-don">Type de don</label>
-
-<select id="type-don" name="type-don">
-
-<option value="dime">Dîme</option>
-
-<option value="offrande">Offrande</option>
-
-<option value="mission">Soutien à la mission</option>
-
-<option value="special">Don spécial</option>
-
-</select>
-
-
-<label for="paiement">Méthode de paiement</label>
-
-<select id="paiement" name="paiement">
-
-<option value="interac">Virement Interac</option>
-
-<option value="carte">Carte de crédit</option>
-
-<option value="paypal">PayPal</option>
-
-</select>
-
-
-<label for="message">Message (optionnel)</label>
-
-<textarea id="message" name="message" rows="5"></textarea>
-
-
-<button type="submit">Envoyer le don</button>
-
-
-</form>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-</main>
-
-
-
-<footer>
-
-<div class="footer-bottom">
-
-<p>
-© 2026 Église du Corps du Christ Sanctifié. Tous droits réservés.
-</p>
-
-</div>
-
-</footer>
-
-
-</body>
-
+                <button type="submit">Envoyer le don</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-bottom">
+        <p>© 2026 Église du Corps du Christ Sanctifié. Tous droits réservés.</p>
+      </div>
+    </footer>
+  </body>
 </html>
